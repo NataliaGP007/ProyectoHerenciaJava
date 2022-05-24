@@ -1,16 +1,18 @@
 package ProyectoHerencia;
 
+// Subclase.
 public class SignoZodiacalChino extends SignoZodiacal{
 
     private int anioNacimiento;
 
+    // Constructor.
     public SignoZodiacalChino(int anioNacimiento, int mesNacimiento, int diaNacimiento) {
         super(mesNacimiento, diaNacimiento);
         this.anioNacimiento = anioNacimiento;
         this.identificarSignoZodiacal();
     }
 
-    @Override
+    @Override // Metodo sobreescrito.
     public void identificarSignoZodiacal() {
         if ((this.anioNacimiento == 1924) || (this.anioNacimiento == 1936) || (this.anioNacimiento == 1948) || (this.anioNacimiento == 1960) || (this.anioNacimiento == 1972) || (this.anioNacimiento == 1984) || (this.anioNacimiento == 1996) || (this.anioNacimiento == 2008) || (this.anioNacimiento == 2020)){
             this.signoZodiacal = "Rata";}
