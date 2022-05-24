@@ -1,13 +1,15 @@
 package ProyectoHerencia;
 
+// Subclase.
 public class SignoZodiacalOccidental extends SignoZodiacal{
 
+    // Constructor.
     public SignoZodiacalOccidental(int mesNacimiento, int diaNacimiento) {
         super(mesNacimiento, diaNacimiento);
         this.identificarSignoZodiacal();
     }
 
-    @Override
+    @Override // Metodo sobreescrito.
     public void identificarSignoZodiacal() {
 
         if ((this.mesNacimiento == 12 && this.diaNacimiento >= 22) || (this.mesNacimiento == 1 && this.diaNacimiento <= 20)){
